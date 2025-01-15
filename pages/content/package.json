@@ -16,14 +16,17 @@
     "lint": "eslint . --ext .ts,.tsx",
     "lint:fix": "pnpm lint --fix",
     "prettier": "prettier . --write --ignore-path ../../.prettierignore",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "build:ajax-interceptor": "npx esbuild src/ajax-interceptor.ts --bundle --outfile=public/ajax-interceptor.js"
   },
   "dependencies": {
     "@extension/shared": "workspace:*",
     "@extension/storage": "workspace:*",
-    "@univer-clipsheet-core/table": "workspace:*"
+    "@univer-clipsheet-core/table": "workspace:*",
+    "@univer-clipsheet-core/ui": "workspace:*"
   },
   "devDependencies": {
+    "tsup": "8.3.5",
     "@extension/hmr": "workspace:*",
     "@extension/tsconfig": "workspace:*",
     "@extension/vite-config": "workspace:*",
