@@ -3,3 +3,4 @@ packages:
   - "pages/*"
   - "packages/*"
   - "tests/*"
+  - 'submodules/univer-clipsheet-core/packages/**'
